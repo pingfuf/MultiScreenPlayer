@@ -4,5 +4,6 @@
     <string name="app_name">MutiScreenPlayer</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="pull_to_refresh">正在刷新</string>
 
 </resources>

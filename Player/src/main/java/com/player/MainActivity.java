@@ -1,11 +1,13 @@
 package com.player;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.library.Temp;
 import com.mutiscreenplayer.R;
 
 /**
@@ -17,6 +19,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Temp temp = new Temp();
+        temp.say();
+        Intent intent = new Intent(this, PullToRefreshActivity.class);
+        startActivity(intent);
     }
 
 
