@@ -1,4 +1,4 @@
-package com.player.mediaserver;
+package com.player.module;
 
 import org.teleal.cling.support.model.container.Container;
 import org.teleal.cling.support.model.item.Item;

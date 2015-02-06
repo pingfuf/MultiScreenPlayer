@@ -1,4 +1,4 @@
-package com.player.view;
+package com.player;
 
 import java.io.IOException;
 
@@ -22,7 +22,7 @@ import android.widget.MediaController;
 
 import com.mutiscreenplayer.R;
 
-public class GPlayer extends Activity implements OnCompletionListener,
+public class GPlayerActivity extends Activity implements OnCompletionListener,
 		OnErrorListener,
         OnInfoListener,
         OnPreparedListener,

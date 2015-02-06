@@ -1,4 +1,4 @@
-package com.player.mediaserver;
+package com.player.service;
 
 import org.teleal.cling.support.contentdirectory.AbstractContentDirectoryService;
 import org.teleal.cling.support.contentdirectory.ContentDirectoryErrorCode;
@@ -12,6 +12,9 @@ import org.teleal.cling.support.model.container.Container;
 import org.teleal.cling.support.model.item.Item;
 
 import android.util.Log;
+
+import com.player.module.ContentNode;
+import com.player.module.ContentTree;
 
 public class ContentDirectoryService extends AbstractContentDirectoryService {
 

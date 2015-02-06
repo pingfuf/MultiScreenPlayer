@@ -1,4 +1,6 @@
-package com.player.mediaserver;
+package com.player.module;
+
+import com.player.module.ContentNode;
 
 import java.util.HashMap;
 

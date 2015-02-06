@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.player.PullToRefreshActivity" />
+        <activity android:name="com.player.GPlayerActivity" />
+        <activity android:name="com.player.MediaActivity" />
     </application>
 
 </manifest>
