@@ -4,30 +4,39 @@
     android:orientation="vertical">
     <RelativeLayout
         android:id="@+id/title_layout"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_width="match_parent"
         android:background="#2ed0a3"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            />
         <TextView
-            android:id="@+id/title_txt"
+            android:id="@+id/tv_title"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
             android:gravity="center"
             android:text="Test"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textColor="#ffffff"
-            android:drawableLeft="@drawable/back"
             />
         <LinearLayout
             android:id="@+id/title_bar_items"
             android:layout_width="match_parent"
-            android:layout_height="22dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_title"
             android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
             android:orientation="horizontal" />
     </RelativeLayout>
     <LinearLayout
