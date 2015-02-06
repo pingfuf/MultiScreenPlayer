@@ -21,8 +21,9 @@ import android.widget.LinearLayout;
 import android.widget.MediaController;
 
 import com.mutiscreenplayer.R;
+import com.player.view.BaseActivity;
 
-public class GPlayerActivity extends Activity implements OnCompletionListener,
+public class GPlayerActivity extends BaseActivity implements OnCompletionListener,
 		OnErrorListener,
         OnInfoListener,
         OnPreparedListener,

@@ -57,8 +57,7 @@ import com.player.view.ContentBrowseActionCallback;
 
 public class MediaActivity extends Activity {
 
-	private static final Logger log = Logger.getLogger(MediaActivity.class
-			.getName());
+	private static final Logger log = Logger.getLogger(MediaActivity.class.getName());
 
 	private ListView deviceListView;
 	private ListView contentListView;
@@ -198,10 +197,9 @@ public class MediaActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, 0, 0, R.string.search_lan).setIcon(
-				android.R.drawable.ic_menu_search);
-		menu.add(0, 1, 0, R.string.toggle_debug_logging).setIcon(
-				android.R.drawable.ic_menu_info_details);
+		menu.add(0, 0, 0, R.string.search_lan).setIcon(android.R.drawable.ic_menu_search);
+		menu.add(0, 1, 0, R.string.toggle_debug_logging).setIcon(android.R.drawable.ic_menu_info_details);
+
 		return true;
 	}
 
