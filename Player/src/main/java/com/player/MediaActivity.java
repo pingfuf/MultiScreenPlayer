@@ -53,9 +53,10 @@ import com.player.module.DeviceItem;
 import com.player.module.WireUpnpService;
 import com.player.service.MediaServer;
 import com.player.util.FixedAndroidHandler;
+import com.player.view.BaseActivity;
 import com.player.view.ContentBrowseActionCallback;
 
-public class MediaActivity extends Activity {
+public class MediaActivity extends BaseActivity {
 
 	private static final Logger log = Logger.getLogger(MediaActivity.class.getName());
 
@@ -123,48 +124,8 @@ public class MediaActivity extends Activity {
 		LoggingUtil.resetRootHandler(new FixedAndroidHandler());
 		Logger.getLogger("org.teleal.cling").setLevel(Level.INFO);
 
-		/*
-		 * Enable this for debug logging:
-		 * 
-		 * // UDP communication
-		 * Logger.getLogger("org.teleal.cling.transport.spi.DatagramIO"
-		 * ).setLevel(Level.FINE);
-		 * Logger.getLogger("org.teleal.cling.transport.spi.MulticastReceiver"
-		 * ).setLevel(Level.FINE);
-		 * 
-		 * // Discovery
-		 * Logger.getLogger("org.teleal.cling.protocol.ProtocolFactory"
-		 * ).setLevel(Level.FINER);
-		 * Logger.getLogger("org.teleal.cling.protocol.async"
-		 * ).setLevel(Level.FINER);
-		 * 
-		 * // Description
-		 * Logger.getLogger("org.teleal.cling.protocol.ProtocolFactory"
-		 * ).setLevel(Level.FINER);
-		 * Logger.getLogger("org.teleal.cling.protocol.RetrieveRemoteDescriptors"
-		 * ).setLevel(Level.FINE);
-		 * Logger.getLogger("org.teleal.cling.transport.spi.StreamClient"
-		 * ).setLevel(Level.FINEST);
-		 * 
-		 * Logger.getLogger("org.teleal.cling.protocol.sync.ReceivingRetrieval").
-		 * setLevel(Level.FINE);
-		 * Logger.getLogger("org.teleal.cling.binding.xml.DeviceDescriptorBinder"
-		 * ).setLevel(Level.FINE);
-		 * Logger.getLogger("org.teleal.cling.binding.xml.ServiceDescriptorBinder"
-		 * ).setLevel(Level.FINE);
-		 * Logger.getLogger("org.teleal.cling.transport.spi.SOAPActionProcessor"
-		 * ).setLevel(Level.FINEST);
-		 * 
-		 * // Registry
-		 * Logger.getLogger("org.teleal.cling.registry.Registry").setLevel
-		 * (Level.FINER);
-		 * Logger.getLogger("org.teleal.cling.registry.LocalItems"
-		 * ).setLevel(Level.FINER);
-		 * Logger.getLogger("org.teleal.cling.registry.RemoteItems"
-		 * ).setLevel(Level.FINER);
-		 */
-
 		setContentView(R.layout.main);
+        setTitleBar("我的列表");
 
 		deviceListView = (ListView) findViewById(R.id.deviceList);
 		contentListView = (ListView) findViewById(R.id.contentList);
